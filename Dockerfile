@@ -9,7 +9,8 @@ RUN apk update \
  && mc -v \
  && mkdir -p /opt/app/ \
  && adduser -S app \
- && chown -R app:0 /opt/app && chmod -R 775 /opt/app/ 
+ && chown -R app:0 /opt/app && chmod -R 775 /opt/app/ \
+ && apk del --purge curl tar git openssh-client wget
 
 WORKDIR /opt/app/
 
