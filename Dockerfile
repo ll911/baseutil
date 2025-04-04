@@ -1,4 +1,4 @@
-FROM alpine:3.21.2
+FROM alpine:3.21.3
 
 RUN apk update \
  && apk --no-cache add git tar curl openssh-client openssl logrotate rsync wget \
