@@ -4,7 +4,7 @@ RUN apk update \
  && apk --no-cache add git tar curl openssh-client openssl logrotate rsync wget \
  && apk upgrade \
  && git config --global url.https://github.com/.insteadOf git://github.com/ \
- && curl https://dl.min.io/client/mc/release/linux-amd64/mc -o /usr/bin/mc \
+ && curl https://dl.min.io/aistor/mc/release/linux-amd64/mc -o /usr/bin/mc \
  && chmod +x /usr/bin/mc \
  && mc -v \
  && mkdir -p /opt/app/ \
